@@ -1,0 +1,21 @@
+/* General Reset & Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #003d82;
+    --accent-color: #e6f2ff;
+    --dark-bg: #1e293b;
+    --light-bg: #ffffff;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
