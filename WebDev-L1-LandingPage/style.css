@@ -138,3 +138,21 @@ body {
     margin: 0 auto;
     font-size: 1.1rem;
 }
+
+/* Footer Styles */
+.footer {
+    background-color: var(--dark-bg);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    color: white;
+}
