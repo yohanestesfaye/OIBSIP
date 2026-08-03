@@ -172,3 +172,62 @@ body {
         font-size: 1rem;
     }
 }
+
+/* Hide Mobile Menu Button on Desktop */
+.menu-toggle,
+.hamburger {
+    display: none;
+}
+
+/* Mobile Responsiveness & Hamburger Menu Styling */
+@media (max-width: 768px) {
+    /* Show Hamburger Button on Mobile */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        height: 3px;
+        width: 100%;
+        background-color: var(--primary-color);
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    /* Hide Navigation Links by Default on Mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    /* Toggle Navigation Menu when Hamburger is Clicked */
+    .menu-toggle:checked ~ nav .nav-links {
+        display: flex;
+    }
+
+    /* Hide the checkbox input itself */
+    .menu-toggle {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
