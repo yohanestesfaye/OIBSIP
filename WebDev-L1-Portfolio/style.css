@@ -59,3 +59,113 @@ body {
 .nav-links a:hover {
     color: var(--accent-color);
 }
+
+/* Hero Section Styling */
+.hero {
+    padding: 5rem 8% 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 800px;
+}
+
+.avatar-box {
+    margin-bottom: 1.5rem;
+}
+
+.avatar-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+    object-fit: cover;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Shared Section Styling */
+.section {
+    padding: 4.5rem 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.alt-bg {
+    background-color: #f1f5f9;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Skills Grid Styling */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: var(--card-bg);
+    padding: 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+}
