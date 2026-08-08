@@ -4,5 +4,5 @@ This repository contains all my project submissions for the Oasis Infobyte Web D
 
 ## Projects List
 
-- - **Level 1 - Task 1:** Landing Page (Completed)
-- **Level 1 - Task 2:** Personal Portfolio (In Progress)
+- **Level 1 - Task 1:** Landing Page (Completed)
+- **Level 1 - Task 2:** Personal Portfolio (Completed)
