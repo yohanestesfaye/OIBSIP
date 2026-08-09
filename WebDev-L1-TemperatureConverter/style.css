@@ -13,6 +13,14 @@ body {
     align-items: center;
     padding: 1rem;
     color: #333;
+    
+}
+body {
+    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)), url('image/whether.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .converter-card {
