@@ -60,9 +60,14 @@ body {
     color: var(--accent-color);
 }
 
-/* Hero Section Styling */
+/* Hero Section Styling - Optimized for Dark Geometric Background */
 .hero {
-    padding: 5rem 8% 3.5rem;
+    /* Uses dark overlay + background image path */
+    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('image/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6rem 8% 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,38 +78,47 @@ body {
     max-width: 800px;
 }
 
-.avatar-box {
-    margin-bottom: 1.5rem;
-}
-
-.avatar-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid var(--accent-color);
-    object-fit: cover;
-}
-
 .hero-text h1 {
     font-size: 2.8rem;
-    color: var(--primary-color);
+    color: #ffffff; /* High contrast white heading */
     margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .highlight {
-    color: var(--accent-color);
+    color: #3b82f6; /* Lighter blue highlight for visibility on dark background */
 }
 
 .hero-text h2 {
     font-size: 1.5rem;
-    color: #64748b;
+    color: #cbd5e1; /* Clear silver sub-heading */
     margin-bottom: 1rem;
     font-weight: 500;
 }
 
 .hero-text p {
     font-size: 1.1rem;
+    color: #f1f5f9; /* Bright white/light-gray body text */
     margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(29, 78, 216, 0.4);
 }
 
 .btn {
