@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter - YohannesTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="converter-card">
+        <h2>Temperature Converter</h2>
+        <form id="calc-form">
+            <div class="input-group">
+                <label for="temperature">Degrees</label>
+                <input type="number" id="temperature" placeholder="Enter number" step="any" required>
+            </div>
+
+            <div class="input-group">
+                <label for="unit">Type</label>
+                <select id="unit">
+                    <option value="celsius">Fahrenheit (°F) to Celsius / Kelvin</option>
+                    <option value="fahrenheit">Celsius (°C) to Fahrenheit / Kelvin</option>
+                    <option value="kelvin">Kelvin (K) to Celsius / Fahrenheit</option>
+                </select>
+            </div>
+
+            <button type="button" id="convert-btn">Convert</button>
+        </form>
+
+        <div id="result-box" class="result-box hidden">
+            <h3>Converted Result:</h3>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
